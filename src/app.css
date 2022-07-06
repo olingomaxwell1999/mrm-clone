@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Finlandica', sans-serif;
+}
+
+.App{
+    display: flex;
+}
+
+/*--------Nav styles start-----------*/
+nav{
+    height: 100vh;
+    color: white;
+    background-color: rgb(43,43,63);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+nav .logo-container,
+nav .controls-container{
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav .logo-container .logo{
+    font-size: 25px;
+}
+
+nav .icons{
+    fill: white;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/*--------Nav styles end-----------*/
+
+/*--------Dashboard styles start-----------*/
+.dashboard{
+    padding: 30px;
+    width: 100%;
+}
+
+.dashboard .ticket-container{
+    height: 80vh;
+    overflow: scroll;
+}
+
+/*--------Dashboard styles end-----------*/
+
+/*--------Ticket Card styles start-----------*/
+.ticket-card{
+    display: flex;
+    width: 100%;
+}
+
+.ticket-card #link{
+    display: flex;
+    width: 100%;
+}
+
+.ticket-card #link > * {
+    background-color: rgb(221, 221, 221);
+    margin: 2px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-card #link .ticket-color{
+    width: 15px !important; 
+    margin: 2px;
+    /* padding: 0 !important; */
+}
+
+.ticket-card .avatar-container{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+}
+
+.ticket-card .img-container{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.ticket-card .img-container img{
+    width: 100%;
+}
+
+.ticket-card .status-display{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#link{
+    text-decoration: none;
+    color: black;
+}
+
+.ticket-card .priority-display{
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-card .priority-display .star-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-card .priority-display .star-container h3{
+    margin: 7px;
+    padding: 0;
+}
+
+.ticket-card .progress-display{
+    min-width: 200px;
+}
+
+.ticket-card .progress-display .progress-bar{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(158,158,158);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ticket-card .progress-display .progress-indicator{
+    background-color: rgb(104, 104, 175);
+    height: 100%;
+}
+
+.ticket-card .delete-block{
+    background-color: rgb(211,211,211);
+    width: 50px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-card .delete-block .delete-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(61,61,61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255,255,255);
+}
+
+/*--------Ticket Card styles end-----------*/
+
+/*--------Ticket Page styles start-----------*/
+.ticket{
+    padding: 30px;
+    width: 100%;
+}
+
+.ticket .create-ticket-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket .create-ticket-container form{
+    display: flex;
+}
+
+.ticket .create-ticket-container form section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 500px;
+}
+
+.ticket .create-ticket-container form section label{
+    margin: 20px 0 0 0;
+}
+
+.ticket form select,
+.ticket form input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgb(218,218,218);
+    margin: 5px;
+}
+
+.ticket form .multiple-input-container {
+    margin: 20px 0 20px 0;
+}
+
+/*--------Ticket Page styles end-----------*/
